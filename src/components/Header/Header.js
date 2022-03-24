@@ -14,10 +14,12 @@ import "./Header.css";
 const Header = ({ handleSearch, openModal, cart }) => {
   const [input, setInput] = useState("");
   return (
-    <div>
+    <div className="mb-5">
       <Navbar bg="dark" variant="dark" expand="lg">
         <Container fluid>
-          <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+          <Navbar.Brand href="#" className="fw-bolder">
+            TheMealDB
+          </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
