@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useState } from "react";
 import Modal from "react-modal";
 import "./App.css";
+import Cart from "./components/Cart/Cart";
 import Header from "./components/Header/Header";
 import Meals from "./components/Meals/Meals";
 
@@ -39,7 +40,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header handleSearch={handleSearch} openModal={openModal} />
+      <Header handleSearch={handleSearch} openModal={openModal} cart={cart} />
       <Meals searchValue={searchValue} handleAddToCart={handleAddToCart} />
       <Modal
         isOpen={modalIsOpen}
@@ -51,7 +52,7 @@ function App() {
           <FontAwesomeIcon icon={faClose}></FontAwesomeIcon>
         </button>
         {cart.map((crt) => (
-          <h1 key={crt.idMeal}>{crt.strMeal}</h1>
+          <Cart cart={crt} />
         ))}
       </Modal>
     </div>

@@ -9,8 +9,9 @@ import {
   Nav,
   Navbar,
 } from "react-bootstrap";
+import "./Header.css";
 
-const Header = ({ handleSearch, openModal }) => {
+const Header = ({ handleSearch, openModal, cart }) => {
   const [input, setInput] = useState("");
   return (
     <div>
@@ -26,6 +27,7 @@ const Header = ({ handleSearch, openModal }) => {
             >
               <Nav.Link href="#action1">Home</Nav.Link>
               <Nav.Link onClick={openModal}>
+                <span className="cart-counter">{cart.length}</span>
                 <FontAwesomeIcon icon={faCartPlus} color="#ffff" />
               </Nav.Link>
             </Nav>

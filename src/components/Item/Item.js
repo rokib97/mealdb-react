@@ -8,8 +8,8 @@ const Item = ({ meal, handleAddToCart }) => {
   // console.log(meal);
 
   return (
-    <div className="col-lg-4 col-md-6 col-12">
-      <div className="card shadow-lg cart-container">
+    <div className="col-lg-3 col-md-6 col-12">
+      <div className="card shadow">
         <img src={strMealThumb} className="card-img-top" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{strMeal.slice(0, 20)}</h5>
