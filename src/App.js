@@ -7,10 +7,10 @@ import { useEffect, useState } from "react";
 import Modal from "react-modal";
 import "./App.css";
 import Cart from "./components/Cart/Cart";
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Meals from "./components/Meals/Meals";
 import Welcome from "./components/Welcome/Welcome";
-import Footer from "./Footer/Footer";
 
 const customStyles = {
   content: {
