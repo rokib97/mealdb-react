@@ -14,8 +14,8 @@ import "./Header.css";
 const Header = ({ handleSearch, openModal, cart }) => {
   const [input, setInput] = useState("");
   return (
-    <div className="mb-5">
-      <Navbar bg="dark" variant="dark" expand="lg">
+    <div className="mb-5 navbar-container">
+      <Navbar variant="dark" expand="lg">
         <Container fluid>
           <Navbar.Brand href="#" className="fw-bolder">
             TheFakeDB
