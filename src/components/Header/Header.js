@@ -41,6 +41,7 @@ const Header = ({ handleSearch, openModal, cart }) => {
                 aria-label="Search"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
+                onKeyDown={(e) => e.key === "Enter" && handleSearch(input)}
               />
               <Button
                 onClick={() => handleSearch(input)}

@@ -10,7 +10,7 @@ const Meals = ({ searchValue, handleAddToCart }) => {
   }, [searchValue]);
   // console.log(meals);
   return (
-    <div className="container">
+    <div className="container my-4">
       <div className="row g-4 ">
         {meals &&
           meals.map((meal) => (

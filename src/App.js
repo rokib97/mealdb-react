@@ -1,12 +1,16 @@
 import { faClose } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Modal from "react-modal";
 import "./App.css";
 import Cart from "./components/Cart/Cart";
 import Header from "./components/Header/Header";
 import Meals from "./components/Meals/Meals";
+import Welcome from "./components/Welcome/Welcome";
+import Footer from "./Footer/Footer";
 
 const customStyles = {
   content: {
@@ -37,11 +41,15 @@ function App() {
   function closeModal() {
     setIsOpen(false);
   }
-
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
-    <div className="App">
+    <div className="App bg-dark">
       <Header handleSearch={handleSearch} openModal={openModal} cart={cart} />
+      <Welcome />
       <Meals searchValue={searchValue} handleAddToCart={handleAddToCart} />
+      <Footer></Footer>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}

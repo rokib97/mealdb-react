@@ -8,7 +8,12 @@ const Item = ({ meal, handleAddToCart }) => {
   // console.log(meal);
 
   return (
-    <div className="col-lg-3 col-md-6 col-12">
+    <div
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="2000"
+      className="col-lg-3 col-md-6 col-12"
+    >
       <div className="card shadow">
         <img src={strMealThumb} className="card-img-top" alt="..." />
         <div className="card-body">
