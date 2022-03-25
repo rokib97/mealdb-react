@@ -18,7 +18,7 @@ const Header = ({ handleSearch, openModal, cart }) => {
       <Navbar bg="dark" variant="dark" expand="lg">
         <Container fluid>
           <Navbar.Brand href="#" className="fw-bolder">
-            TheMealDB
+            TheFakeDB
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
