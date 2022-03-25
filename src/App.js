@@ -45,7 +45,7 @@ function App() {
     AOS.init();
   }, []);
   return (
-    <div className="App bg-dark">
+    <div className="App">
       <Header handleSearch={handleSearch} openModal={openModal} cart={cart} />
       <Welcome />
       <Meals searchValue={searchValue} handleAddToCart={handleAddToCart} />
