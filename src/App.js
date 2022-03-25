@@ -27,7 +27,6 @@ function App() {
   const [searchValue, setSearchValue] = useState("");
   const [cart, setCart] = useState([]);
   const [modalIsOpen, setIsOpen] = useState(false);
-  console.log(cart);
   const handleSearch = (input) => {
     setSearchValue(input);
   };
